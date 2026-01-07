@@ -1,5 +1,121 @@
 
+.seasons-list-items {
+    display: flex;
+
+    flex-direction: column;
+    gap: 8px;               
+
+  }
+  
+
+  .seasons-list-episode-code {
+    font-size: 14px;
+    color: #000000;
+    
+  }
+  
+
+  #season {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  
+    width:190px;
+    height: 48px;
+    padding: 0 44px 0 16px;
+  
+    border-radius: 999px;
+    border: 2px solid #222;
+    background-color: #fff;
+  
+    font-size: 16px;
+    cursor: pointer;
+  
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5' fill='none' stroke='black' stroke-width='2'/%3E%3C/svg%3E") ;
+
+ 
+    
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    background-size: 18px;
+  }
+  
+
+
+.seasons-list-name{
+    width: 43;
+    height: 18;
+  
+font-weight: 400;
+font-style: 'Regular';
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0%;
+
+
+}
 
 
 
+.seasons-list-name-input{
+    width: 207;
+    height: 20;
+    border-radius: 100px;
+    padding-top: 16px;
+    padding-right: 24px;
+    padding-bottom: 16px;
+    padding-left: 24px;
+    gap: 72px;
+    opacity: 1;
+    border-width: 1.5px;
+    font-size: 16px ;
+    font-family: sans-serif; 
+    background: #DAF836;
+    border: 1.5px solid #111111;
+font-weight: 400;
+
+
+ 
+    
+}
+
+
+
+
+
+
+
+
+
+.seasons-list-btn{
+
+display: none;
+display: inline-flex;
+align-items: center;
+background-color: #A1D737;
+border: 1px solid #A1D737;
+border-radius: 1000px; 
+padding: 12px 24px;
+gap: 10px;
+color: #0D171D;
+font-family: sans-serif; 
+font-weight: 600;
+font-size: 14px;
+line-height: 1; 
+text-decoration: none;
+}
+
+.seasons-list-btn:hover{
+    background-color: #0D171D;
+    color: #A1D737;
+    border: 1px solid #0D171D;
+    transform: scale(1.2);
+}
+
+
+.container {
+    display: flex;          
+    align-items: flex-end;  
+    gap: 20px;            
+}
 
