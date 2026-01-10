@@ -2,7 +2,7 @@
 .seasons-list-items {
     display: flex;
     flex-direction: column;
-    gap: 8px; 
+    gap: 6px; 
                   
 
   }
@@ -11,7 +11,7 @@
 
     justify-content: center;
     display: flex;          
-    align-items: flex-end;  
+    align-items: flex-start;  
     gap: 40px;   
              
 }
@@ -31,9 +31,9 @@
 
   #season {
     display: block;
-    margin: 0 auto;
+     margin: 0 auto;
   
-    width: 190px;
+    width: 220px;
     height: 48px;
   
     padding: 0 44px 0 16px;
@@ -54,44 +54,31 @@
 
 
 .seasons-list-name{
-    margin: 10px auto;
-margin-top: 5p;
-    align-items: center;
-    justify-content: center;
-    width: 43;
-    height: 18;
-  
-font-weight: 400;
-font-style: 'Regular';
-font-size: 14px;
-line-height: 18px;
-letter-spacing: 0%;
-margin-bottom: 1px;
+    margin: 0 0 4px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #000;
 
 }
 
 
 
 .seasons-list-name-input {
-    
-    margin: 10px auto;
-
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-  
-    width: 207px;
+    width: 220px;
     height: 48px;
-  
     padding: 10px 24px;
     border-radius: 100px;
     background: #DAF836;
     border: 1.5px solid #111;
     font-size: 16px;
     font-family: sans-serif;
-    
   }
   
+  .seasons-list-name-input::placeholder {
+    color: #000;
+    opacity: 1;
+}
 
 
 
@@ -122,15 +109,24 @@ margin-bottom: 1px;
 
 
 .seasons-list-btn:hover{
-    background-color: #0D171D;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    background-color: #000;
     color: #A1D737;
-    border: 1px solid #0D171D;
-    transform: scale(1.2);
+    border: 1px solid #000000;
+
 }
-
-
-.seasons-list-items-inputs{
+.seasons-list-items-inputs {
     display: flex;
-    justify-content: center;
-    gap: 16px ;
+    align-items: flex-start;
+    gap: 24px;
+  
 }
+
+.seasons-list-text,
+.seasons-list-items {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
