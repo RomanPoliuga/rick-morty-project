@@ -1,14 +1,18 @@
 .header{
   padding: 20px 0;
+   background: #0D171D;
 }
 .header-list{
   display: inline-flex;
-  gap: 4px;
-  padding: 4px;
-  background: #0D171D;
-  border-radius: 12px;
   list-style: none;
   margin: 0; 
+  margin-left: 128px;
+   @media (min-width: 768px) {
+   margin-left: 32px;
+  }
+   @media (max-width: 767px) {
+     margin-left: 20px;
+   }
 }
 .header-list-child {
   margin: 0;
@@ -24,6 +28,9 @@
   border: 1px solid rgba(250, 250, 250, 0.3);
   background: transparent;
   transition: all 0.2s ease;
+   @media (max-width: 767px) {
+     padding: 10px 20px; 
+   }
 }
 .header-link:hover {
 color: #0D171D;
