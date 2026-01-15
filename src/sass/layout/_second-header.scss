@@ -1,0 +1,18 @@
+.second-header {
+  background-color: #0d171d;
+}
+.second-header-img {
+  margin-left: 128px;
+  width: 193px;
+  height: 49px;
+  @media (min-width: 768px) {
+    margin-left: 32px;
+    width: 193px;
+    height: 73px;
+  }
+  @media (max-width: 767px) {
+    margin-left: 20px;
+    width: 120px;
+    height: 45px;
+  }
+}
