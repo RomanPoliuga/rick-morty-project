@@ -1,7 +1,6 @@
 
 
 
-@use './layout/hero-list';
 @use "./utils/variables";
 @use "./base/reset";
 @use "./base/common";
@@ -12,5 +11,5 @@
 @use "./layout/main-characters";
 @use "./layout/main-slider";
 @use "./layout/sesons-list";
-
+@use './layout/hero-list';
 @use './layout/footer';
