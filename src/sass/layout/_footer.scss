@@ -1,67 +1,135 @@
+//! Светлый футер сайта
+footer {
+  padding-top: 40px;
+  padding-bottom: 16px;
+}
 .footer-top {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 6.25rem;
-  margin: 0 128px 0 128px;
-  padding-top: 4rem;
+  padding: 0 20px 0 20px;
+  @media (min-width: 768px) {
+    margin: 0 40px 0 40px;
+    margin-bottom: 128px;
+  }
+  @media (min-width: 1024px) {
+    margin-bottom: 100px;
+  }
 }
 
 .footer-logo {
-  width: 225px;
-  height: 135px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 8px;
+  width: 150px;
+  height: 107px;
+  @media (min-width: 768px) {
+    width: 225px;
+    height: 107px;
+  }
 }
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    gap: 78px;
+  }
+  @media (min-width: 1024px) {
+    gap: 200px;
+  }
+  @media (min-width: 1440px) {
+    gap: 280px;
+  }
+}
+.footer-list {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
-.footer-item {
-  font-family: var(--font-family);
-  letter-spacing: 0.01em;
+  &-item {
+    @media (min-width: 768px) {
+      font-family: var(--font-family);
+      font-size: 16px;
+      line-height: 113%;
+      letter-spacing: 0.01em;
+    }
+  }
 }
 
 .social {
   display: flex;
   gap: 20px;
-}
+  @media (min-width: 1024px) {
+    gap: 32px;
+  }
 
-.social-btn {
-  width: 56px;
-  height: 56px;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  background: white;
-}
+  &-btn {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: var(--white);
+    @media (min-width: 768px) {
+      width: 56px;
+      height: 56px;
+    }
+  }
 
-.social-btn:hover {
-  background: #f8f8f8;
-  border-color: #d0d0d0;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
+  &-btn:hover {
+    background: #f8f8f8;
+    border-color: #d0d0d0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
 
-.social-btn svg {
-  width: 24px;
-  height: 24px;
-  fill: #1a1a1a;
-  transition: fill 0.3s ease;
-}
+  &-btn svg {
+    width: 18px;
+    height: 18px;
+    fill: #1a1a1a;
+    transition: fill 0.3s ease;
+    @media (min-width: 768px) {
+      width: 24px;
+      height: 24px;
+    }
+  }
 
-.social-btn:hover svg {
-  fill: #000;
+  &-btn:hover svg {
+    fill: var(--black);
+  }
 }
 
 .footer-policy {
   font-family: var(--font-family);
-  font-size: 14px;
-  line-height: 129%;
+  font-size: 12px;
+  line-height: 117%;
   text-align: center;
   color: rgba(17, 17, 17, 0.4);
-  padding: 2rem 0;
+  padding-bottom: 16px;
+  @media (min-width: 768px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1024px) {
+    line-height: 129%;
+  }
+}
+//! Темный футер сайта
+.footer-dark {
+  background-color: var(--black);
+}
+.footer-item--dark {
+  color: var(--white);
+}
+.social-dark-btn {
+  border: 1px solid #fafafa80;
+  background-color: var(--black);
+}
+.social-dark-btn svg {
+  fill: var(--white);
 }
