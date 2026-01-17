@@ -79,3 +79,4 @@ document.addEventListener('DOMContentLoaded', function() {
     nameElement.style.cursor = 'pointer';
   });
 });
+import './sass/main.scss'
