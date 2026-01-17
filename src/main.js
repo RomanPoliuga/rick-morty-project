@@ -1,2 +1,2 @@
 import './sass/main.scss'
-import './js/characters'
+import './js/characters.js'
