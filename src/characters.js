@@ -9,12 +9,16 @@ const refs = {
 const BASE_URL = "https://rickandmortyapi.com/api/character";
 
 async function fetchCharacters() {
-  const params = new URLSearchParams({
-    name: refs.name.value,
+
+  const paramsObj = {
+    name: refs.name.value.trim(),
     status: refs.status.value,
     species: refs.species.value,
     gender: refs.gender.value,
-  });
+  };
+  const params = new URLSearchParams(
+    Object.fromEntries(Object.entries(paramsObj).filter(([k, v]) => v))
+  );
 
   try {
     const response = await fetch(`${BASE_URL}/?${params}`);
@@ -35,7 +39,7 @@ function renderCharacters(characters) {
         <img src="${char.image}" alt="${char.name}">
         <h3>${char.name}</h3>
         <p>${char.status} • ${char.species}</p>
-        <p>${char.location.name}</p>
+        <p>${char.location?.name || "Unknown location"}</p>
       </li>
     `
     )
