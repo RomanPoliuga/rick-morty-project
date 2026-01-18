@@ -5,7 +5,7 @@ const loadMoreBtn = document.querySelector(".seasons-list-btn");
 
 let allEpisodes = [];        
 let filteredEpisodes = [];   
-let itemsPerPage = 6;        
+let itemsPerPage = 10;        
 let currentIndex = 0;        
 
 
@@ -84,7 +84,7 @@ function renderEpisodes(episodes) {
         card.classList.add("episode-card");
 
         card.innerHTML = `
-            <img src="imges-seasons-list/season${seasonNumber}.jpg" alt="${ep.name}">
+            <img src="images-seasons-list/season${seasonNumber}.jpg" alt="${ep.name}">
             <h3>${ep.name}</h3>
             <p>${seasonName}</p>
             <p>${ep.air_date}</p>
