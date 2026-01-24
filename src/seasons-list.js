@@ -4,7 +4,7 @@ import season02 from './images-seasons-list/season02.jpg';
 import season03 from './images-seasons-list/season03.jpg';
 import season04 from './images-seasons-list/season04.jpg';
 import season05 from './images-seasons-list/season05.jpg';
-import season06 from './images-seasons-list/season06.jpg';
+
 
 const seasonImages = {
   '01': season01,
@@ -12,7 +12,7 @@ const seasonImages = {
   '03': season03,
   '04': season04,
   '05': season05,
-  '06': season06,
+  
 };
 
 
