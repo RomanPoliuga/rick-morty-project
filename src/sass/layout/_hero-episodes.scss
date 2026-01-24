@@ -1,0 +1,39 @@
+.hero-episodes {
+  background-color: #0d171d;
+  border-radius: 0 0 100px 100px;
+  padding-top: 76px;
+  padding-bottom: 65px;
+}
+.hero-episodes-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-episodes-box-image {
+  border-radius: 100px;
+  width: 504px;
+  height: 504px;
+  background-color: #a1d737;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 124px;
+}
+.hero-episodes-title {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 100%;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 16px;
+}
+.hero-episodes-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #fafafa;
+  max-width: 482px;
+  margin-bottom: 32px;
+}

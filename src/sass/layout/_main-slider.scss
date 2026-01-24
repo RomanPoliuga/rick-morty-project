@@ -2,20 +2,25 @@
   background: var(--slider-bg);
   color: #fff;
   border-radius: 2rem;
-  padding: 80px 0;
+  padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 
   .hero-title {
     font-family: var(--font-family), sans-serif;
-    font-size: 1.25rem;
-    line-height: 1.1;
-    margin: 0 0 0.9rem 0;
+    font-size: 2rem;
+    line-height: 1.2;
+    margin: 0 0 2rem 0;
     color: #fff;
+    max-width: 70%;
+    font-weight: 700;
 
     .highlight {
       display: inline-block;
       background: var(--accent-green);
-      color: var(--white);
-      padding: 0.125rem 0.5rem;
+      color: #000;
+      padding: 0.25rem 0.75rem;
       border-radius: 1rem;
       margin: 0 0.35rem;
       font-weight: 700;
@@ -26,7 +31,8 @@
     display: flex;
     gap: 0.75rem;
     overflow-x: auto;
-    padding-bottom: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
 
     -ms-overflow-style: none;
     scrollbar-width: none;
@@ -34,8 +40,8 @@
   .slides::-webkit-scrollbar { display: none; }
 
   .slide {
-    flex: 0 0 200px;
-    border-radius: 0.75rem;
+    flex: 0 0 140px;
+    border-radius: 1rem;
     overflow: hidden;
     background: transparent;
     display: block;
@@ -44,7 +50,7 @@
       display: block;
       width: 100%;
       height: auto;
-      border-radius: 0.5rem;
+      border-radius: 1rem;
       border: 3px solid rgba(161,215,55,0.12);
       box-shadow: 0 4px 10px rgba(0,0,0,0.25) inset;
     }
