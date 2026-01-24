@@ -3,16 +3,16 @@
   border-radius: 0 0 100px 100px;
   padding-top: 54px;
   padding-bottom: 43px;
-  // filter: blur(94px);
-  // background: linear-gradient(180deg, #14182c 36.46%, rgba(52, 56, 127, 0) 100%);
-  // border-radius: 200000px;
-  // width: 526px;
-  // height: 476px;
 }
 .hero-box {
   display: flex;
   justify-content: center;
   align-items: center;
+   @media (max-width:1199px) {
+     flex-direction: column-reverse;
+     margin-left: auto;
+     margin-right: auto;
+  }
 }
 .hero-text {
   font-family: var(--font-family);
@@ -20,15 +20,30 @@
   font-size: 16px;
   line-height: 113%;
   color: #fafafa;
-  max-width: 300px;
+  max-width: 320px;
+   @media (min-width: 768px) {
+    max-width: 421px;
+  }
+  @media (max-width: 767px) {
+     max-width: 300px;
+  }
 }
 .hero-image {
   margin-left: auto;
   margin-right: auto;
-}
+    @media (max-width: 767px) {
+    width: 335px;
+    }
+  }
 .hero-logo {
   width: 460px;
   height: 175px;
   margin-left: auto;
   margin-right: auto;
-}
+  @media (max-width: 767px) {
+    width: 320px;
+  height: 125px;
+  }
+    
+  }
+
