@@ -1,5 +1,4 @@
 import './sass/main.scss';
-
 const characters = [
   {
     name: 'Rick Sanchez',
