@@ -1,36 +1,43 @@
 <section class="hero-list">
   <label>Name
-  <input type="text" placeholder="Enter name" />
+  <input type="text" placeholder="Enter name" data-name />
 </label>
 
-<div>
-  <label>Status
-  <select>
-    <option>Alive</option>
-    <option>Dead</option>
-  </select>
-</label>
+  <div>
+    <label>
+      Status
+      <select data-status>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+      </select>
+    </label>
 
-  <label>Species
-  <select>
-    <option>Human</option>
-    <option>Alien</option>
-  </select>
-</label>
+    <label>
+      Species
+      <select data-species>
+        <option value="human">Human</option>
+        <option value="alien">Alien</option>
+      </select>
+    </label>
 
-  <label>Gender
-
-  <select>
-    <option>All</option>
-    <option>Male</option>
-    <option>Female</option>
-  </select>
-</label>
+    <label>
+      Gender
+      <select data-gender>
+        <option value="">All</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </label>
   
-</div>
+</div> 
+ 
+<ul data-characters></ul>
+
 
   <img src="./img/portal.svg" alt="portal" />
 
   <p>Oops! Try looking for something else...</p>
+
+  <script type="module" src="/src/charecters.js"></script>
   
 </section>
