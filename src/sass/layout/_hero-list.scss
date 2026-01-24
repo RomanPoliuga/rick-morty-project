@@ -1,0 +1,30 @@
+.hero-list {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero-list{
+  display: block;
+  margin-top: 12px;
+}
+
+.hero-list input,
+.hero-list select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #000;
+}
+
+.hero-list img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+}
+
+.hero-list p {
+  text-align: center;
+}
+
+
