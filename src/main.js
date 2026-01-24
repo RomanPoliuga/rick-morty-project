@@ -1,3 +1,10 @@
+import './sass/main.scss';
+import rickImage from './img/rick-character.png';
+import mortyImage from './img/morty-smith.png';
+import summerImage from './img/summer-smith.png';
+import bethImage from './img/beth-smith.png';
+import jerryImage from './img/jerry-smith.png';
+
 const characters = [
   {
     name: 'Rick Sanchez',
@@ -33,7 +40,7 @@ const characters = [
 
 
 function updateCharacter(character) {
-  const heroImage = document.querySelector('.hero-image');
+  const heroImage = document.querySelector('.hero-character-image');
   const heroMediaBg = document.querySelector('.hero-media-bg');
   const heroContent = document.querySelector('.hero-content');
   
@@ -42,7 +49,6 @@ function updateCharacter(character) {
     heroImage.alt = character.name;
   }
   
-  // Змінюємо колір фону
   if (heroMediaBg) {
     heroMediaBg.style.backgroundColor = character.bgColor;
   }

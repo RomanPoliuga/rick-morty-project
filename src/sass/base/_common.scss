@@ -1,9 +1,21 @@
+html {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+}
+
+body {
+  font-family: inherit;
+  line-height: 1.5;
+  color: #111827;
+}
+
   .container {
     min-width: 320px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
-   outline: 1px dashed blue;
   @media screen and (min-width: 375px) {
     width: 480px;
   }
