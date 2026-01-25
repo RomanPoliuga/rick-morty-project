@@ -1,3 +1,5 @@
+console.log("JS WORKS 🚀");
+
 const refs = {
   list: document.querySelector("[data-characters]"),
   name: document.querySelector("[data-name]"),

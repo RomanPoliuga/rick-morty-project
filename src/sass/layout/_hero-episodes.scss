@@ -8,6 +8,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 767px) {
+    display: block;
+  }
 }
 .hero-episodes-box-image {
   border-radius: 100px;
@@ -18,6 +21,16 @@
   align-items: center;
   justify-content: center;
   margin-left: 124px;
+  overflow: hidden;
+  @media (max-width: 1199px) {
+    width: 346px;
+    height: 346px;
+    margin-left: 54px;
+  }
+  @media (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .hero-episodes-title {
   font-family: var(--font-family);
@@ -27,6 +40,14 @@
   text-align: center;
   color: #fafafa;
   margin-bottom: 16px;
+  @media (max-width: 1199px) {
+    font-size: 60px;
+  }
+  @media (max-width: 767px) {
+    font-size: 40px;
+    line-height: 110%;
+    margin-bottom: 14px;
+  }
 }
 .hero-episodes-text {
   font-family: var(--font-family);
@@ -36,4 +57,14 @@
   color: #fafafa;
   max-width: 482px;
   margin-bottom: 32px;
+  @media (min-width: 768px) {
+    max-width: 335px;
+    margin-bottom: 24px;
+    line-height: 112%;
+  }
+  @media (max-width: 767px) {
+    margin-bottom: 24px;
+    font-size: 14px;
+    line-height: 129%;
+  }
 }
