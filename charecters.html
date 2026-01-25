@@ -5,15 +5,23 @@
     <link rel="icon" type="image/svg+xml" href="/rick-morty-project/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     
-    <link rel="stylesheet" href="/rick-morty-project/assets/main-973dbe4a.css">
+    <script type="module" crossorigin src="/rick-morty-project/assets/charecters-7b476e53.js"></script>
+    <link rel="modulepreload" crossorigin href="/rick-morty-project/assets/main-2fc84b47.js">
+    <link rel="stylesheet" href="/rick-morty-project/assets/main-d322b37b.css">
   </head>
   <body>
     <!-- Loads the specified .html file -->
     <header class="second-header">
   <div class="container">
-    <img src="/rick-morty-project/assets/header-logo-5473afe0.svg" alt=""  class="second-header-img"/>
+    <a href="./index.html"><img src="/rick-morty-project/assets/header-logo-5473afe0.svg" alt=""  class="second-header-img"/></a>   
   </div>
 </header>
 
@@ -36,44 +44,68 @@
     </div>
   </div>
 </section>
+    <div class="tags-container">
+  <button class="tag tag-dark">the adventures</button>
+  <button class="tag tag-dark-green">Animated</button>
+  <button class="tag tag-light-green">Sitcom</button>
+  <button class="tag tag-dark-green">Justin Roiland</button>
+  <button class="tag tag-dark superpower">superpower</button>
+  <button class="tag tag-light-green">creative</button>
+  <button class="tag tag-dark-green">Amazing!</button>
+  <button class="tag tag-dark">Rick and Morty</button>
+  <button class="tag tag-light-green">comics</button>
+  <button class="tag tag-dark follows">follows</button>
+  <button class="tag tag-light-green">characters</button>
+  <button class="tag tag-dark-green">Whoa</button>
+</div>
+
+
 
     <section class="hero-list">
   <label>Name
-  <input type="text" placeholder="Enter name" />
+  <input type="text" placeholder="Enter name" data-name />
 </label>
 
-<div>
-  <label>Status
-  <select>
-    <option>Alive</option>
-    <option>Dead</option>
-  </select>
-</label>
+  <div>
+    <label>
+      Status
+      <select data-status>
+        <option value="alive">Alive</option>
+        <option value="dead">Dead</option>
+      </select>
+    </label>
 
-  <label>Species
-  <select>
-    <option>Human</option>
-    <option>Alien</option>
-  </select>
-</label>
+    <label>
+      Species
+      <select data-species>
+        <option value="human">Human</option>
+        <option value="alien">Alien</option>
+      </select>
+    </label>
 
-  <label>Gender
-
-  <select>
-    <option>All</option>
-    <option>Male</option>
-    <option>Female</option>
-  </select>
-</label>
+    <label>
+      Gender
+      <select data-gender>
+        <option value="">All</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </label>
   
-</div>
+</div> 
+ 
+<ul data-characters></ul>
+
 
   <img src="/rick-morty-project/assets/portal-f93850cd.svg" alt="portal" />
 
   <p>Oops! Try looking for something else...</p>
+
+
   
 </section>
-    
+
+
     <footer class="footer-dark">
   <div class="container">
     <div class="footer-top">
@@ -128,7 +160,12 @@
 
 
    
-    <script type="" src="/charecters.js"></script>
-    
+
+
+  
+
+   
+
+
   </body>
 </html>
